@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;900&display=swap');
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+header {
+  background: rgb(255, 107, 107);
+  background: linear-gradient(90deg, rgba(255, 107, 107, 1) 0%, rgba(252, 176, 69, 1) 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+}
+
+header .logo h3 {
+  font-size: 40px;
+  color: white;
+}
+
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 40px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 2px gray;
+  transition: 0.3s;
+}
+
+header nav ul li a:hover {
+  color: aquamarine;
+}
+
+
+
+
+/* view */
+.view-title {
+  text-align: center;
+  margin: 20px;
+}
+
+.view-container {
+  width: 70%;
+  margin: 60px auto;
+}
+
+.items {
+  padding: 50px;
+  /* border: 1px dashed black; */
+}
+
+.item {
+  box-shadow: 1px 1px 3px rgb(94, 94, 94);
+  border-radius: 30px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.item-header {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(236, 236, 236);
+}
+
+.item-header h3{
+  color: rgb(0, 0, 0);
+}
+
+.item-header .buttons .url{
+  background-color: rgb(59, 150, 255);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+}
+.item-header .buttons a{
+  margin-left: 20px;
+}
+.item-header .buttons .edit{
+  background-color: rgb(15, 73, 0);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+}
+.item-header .buttons .delete{
+  background-color: rgb(255, 59, 59);
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+}
+.item-content {
+  padding: 30px;
+}
+.item-content p{
+  text-align: center;
+}
+
+
+
+/* form */
+.form-container{
+  width: 80%;
+  margin: 60px auto;
+}
+.form input{
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px solid black;
+  transition: all 0.3s;
+}
+.form input:focus{
+  outline: 0;
+  border-bottom:1px solid  rgb(59, 150, 255);
+  transform: scale(1.1);
+}
+.form textarea{
+  display: block;
+  width: 100%;
+  resize: none;
+  margin-bottom: 20px;
+  height: 70px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.form textarea:focus{
+  outline: 0;
+  border: 1px solid rgb(59, 150, 255);
+  transform: scale(1.1);
+}
+.submit-button{
+  display: block;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(150, 199, 255);
+  transition: 0.4s;
+}
+.submit-button:hover{
+  transform: scale(1.1);
+}
+.attention-text{
+  text-align: center;
+  color: red;
+  margin-top: 10px;
+}
+
+
+@media screen and (max-width:912px) {
+  .view-container{
+    width: 90%; 
+  }
+  .buttons a{
+    font-size: 15px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width:520px)  {
+  .view-container{
+    width: 100%;
+  }
+  .items{
+    padding: 20px;
+  }
+  .view-title{
+    font-size: 30px;
+  }
+  header .logo h3{
+    font-size: 25px;
+    padding: 20px;
+  }
+  header{
+    justify-content: space-between;
+  }
+}
